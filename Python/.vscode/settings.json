@@ -1,0 +1,5 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.analysis.autoImportCompletions": true
+}

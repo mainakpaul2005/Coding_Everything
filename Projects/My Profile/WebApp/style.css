@@ -1,0 +1,146 @@
+html {
+    scroll-padding-top: 80px; /* Adjust this value to match your header height */
+    scroll-behavior: smooth; /* Ensures smooth scrolling */
+}
+/* Reset & base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif; /* Use the Inter font */
+    background: dimgrey;
+    color: #e0e0e0; /* Light text color for contrast */
+    line-height: 1.6;
+}
+/* Header with dark theme adjustments */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 100;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the text color stays the same */
+    display: flex; /* Aligns the SVG and text horizontally */
+    align-items: center; /* Centers the text and logo vertically */
+}
+header .logo svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+header .logo h1 {
+    font-size: 24px;
+    color: white;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-bottom: 10px;
+}
+nav a:hover {
+    color: #A7C7E7;
+}
+
+/* Hero section with dark adjustments */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    padding: 50px;
+    background: url('https://source.unsplash.com/random/1600x900?technology') no-repeat center/cover;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #e0e0e0;
+    padding: 20px;
+}
+.hero-content h2 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    color: white;
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Section styling for dark content areas */
+.section {
+    padding: 60px 30px;
+}
+.section h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+.section .content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.card {
+    background: #1e1e1e; /* Dark card background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Footer with dark adjustments */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    .hero-content h2 {
+        font-size: 36px;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+}

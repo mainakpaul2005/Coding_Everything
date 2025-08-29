@@ -1,0 +1,19 @@
+def primecheck(n):
+    c=0
+    flag=1
+    for i in range(1,int(n/2)):
+        if n%i==0:
+           c+=1
+    if c<1:
+        flag=0   
+    return c 
+l=[]
+k=0       
+rn=eval(input("Enter Range of Numbers : ")) 
+for i in range(rn[0],rn[1]+1):
+     if primecheck(i)<=1:
+         k=k+1
+         l.append(i)   
+print("The prime numbers in the range are :",k)
+print("The Numbers are :",l)         
+         
