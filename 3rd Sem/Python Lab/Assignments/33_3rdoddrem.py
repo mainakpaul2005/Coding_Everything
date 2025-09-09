@@ -1,19 +1,13 @@
-l = eval(input("Enter a list of nos: "))
+l = eval(input("Enter a list of numbers: "))
 
-c = 0
+c = 0   
+new_list = []
 
-if(len(l) < 3):
-    print("Error not a list with more than 3 nos.")
-else:
-    for i in range(len(l)-1):
-        if l[i] % 2 != 0:
-            c+=1
-        if c == 3:
-            print("The popped integer: ",l[i])
-            c = 0
+for num in l:
+    if num % 2 != 0:   
+        c += 1
+        if c % 3 == 0: 
+            continue   
+    new_list.append(num)
 
-
-
-   
-
-
+print("List after removing every 3rd odd number:", new_list)

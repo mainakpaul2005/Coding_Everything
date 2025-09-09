@@ -1,4 +1,3 @@
-
 r = int(input("Enter the number of rows for the Array: "))
 c = int(input("Enter the number of columns for the Array: "))
 
@@ -12,22 +11,20 @@ for i in range(r):
 
 print("\nThe Array is:")
 for row in m:
-    print(row)
+    print(" ".join(map(str, row)))   # formatted print
 
-
+# ---- Check identical rows ----
 row_f = False
-
 for i in range(r):
     for j in range(i + 1, r):
         if m[i] == m[j]:
-            print(f"\nIdentical Rows: Row {i+1} and Row {j+1}")
-            print("Row", i+1, ":", m[i])
-            print("Row", j+1, ":", m[j])
+            print(f"\nIdentical Rows found: Row {i+1} and Row {j+1}")
+            print("Row", i+1, ":", " ".join(map(str, m[i])))
+            print("Row", j+1, ":", " ".join(map(str, m[j])))
             row_f = True
 
-
+# ---- Check identical columns ----
 col_f = False
-
 for i in range(c):
     for j in range(i + 1, c):
         identical = True
@@ -36,9 +33,10 @@ for i in range(c):
                 identical = False
                 break
         if identical:
-            print(f"\nIdentical Columns: Column {i+1} and Column {j+1}")
-            print("Column", i+1, ":", [m[k][i] for k in range(r)])
-            print("Column", j+1, ":", [m[k][j] for k in range(r)])
+            col_i = [m[k][i] for k in range(r)]
+            print(f"\nIdentical Columns found: Column {i+1} and Column {j+1}")
+            print("Column", i+1, ":", " ".join(map(str, col_i)))
+            print("Column", j+1, ":", " ".join(map(str, col_i)))
             col_f = True
 
 if not row_f and not col_f:

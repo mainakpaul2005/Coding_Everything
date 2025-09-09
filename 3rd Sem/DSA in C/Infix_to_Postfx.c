@@ -104,7 +104,7 @@ void infixToPostfix(stk* s,char* infix, char* postfix)
         }
         
         else 
-		{
+		{ 
             while (!isEmpty(s) && precedence(peek(s)) >= precedence(ch)) 
 			{
                 postfix[j++] = pop(s);

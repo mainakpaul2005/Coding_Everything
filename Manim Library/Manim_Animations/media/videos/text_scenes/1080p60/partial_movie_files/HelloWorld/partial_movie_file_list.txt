@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/text_scenes/1080p60/partial_movie_files/HelloWorld/3529212410_3531811053_223132457.mp4'
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/text_scenes/1080p60/partial_movie_files/HelloWorld/3040924799_1839128356_4036230759.mp4'
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/text_scenes/1080p60/partial_movie_files/HelloWorld/3040924799_4036649562_2784080758.mp4'

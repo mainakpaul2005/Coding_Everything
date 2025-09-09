@@ -1,27 +1,20 @@
+# Input matrix
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
 
+matrix = []
+print("Enter the matrix row by row:")
 
+for i in range(rows):
+    row = list(map(int, input().split()))
+    matrix.append(row)
 
-r1 = int(input("Enter the number of rows for the matrix: "))
-c1 = int(input("Enter the number of columns for the matrix: "))
+# Reverse every 2nd row (i.e., row index 1, 3, 5, ...)
+for i in range(rows):
+    if (i+1) % 2 == 0:   # check if it's the 2nd, 4th, 6th... row
+        matrix[i] = matrix[i][::-1]  # reverse the row
 
-m = [[0 for _ in range(c1)] for _ in range(r1)]
-
-print("Enter the matrix:")
-
-for i in range(r1):
-    for j in range(c1):
-        m[i][j] = int(input(f"Enter element at row {i+1}, col {j+1}: "))
-
-print("\nThe matrix is:")
-
-for row in m:
+# Output the modified matrix
+print("\nMatrix after reversing every 2nd row:")
+for row in matrix:
     print(row)
-
-
-print("\nMatrix with every 2nd row reversed:")
-
-for i in range(r1):
-    if (i + 1) % 2 == 0:   
-        print(m[i][::-1])
-    else:
-        print(m[i])

@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/transformations/1080p60/partial_movie_files/MovingDot/3529212410_217773733_223132457.mp4'
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/transformations/1080p60/partial_movie_files/MovingDot/3040924799_2132141338_2965735400.mp4'
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/transformations/1080p60/partial_movie_files/MovingDot/3040924799_4062452936_2965735400.mp4'
+file 'file:D:/Coding/Manim Library/Manim_Animations/media/videos/transformations/1080p60/partial_movie_files/MovingDot/3040924799_3464341990_2965735400.mp4'
